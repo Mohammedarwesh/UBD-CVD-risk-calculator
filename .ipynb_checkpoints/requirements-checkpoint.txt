@@ -1,0 +1,10 @@
+dill==0.2.8.2
+flask==1.0
+gunicorn=19.5.0
+Jinja2==2.10
+scipy==1.1.0
+scikit-learn==0.19.1
+spacy==2.0.16
+numpy
+pandas
+matplotlip

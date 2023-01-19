@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>UBD-CVD</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+ <h1><center> UBD CVD risk calculator</center> 
+<img align="middle" width="100" height="130" src="https://ihs.ubd.edu.bn/wp-content/uploads/2017/02/cropped-UBD-Main-Logo.png" class="custom-logo" alt="UBD PAPRSB Institute of Health Sciences" srcset="https://ihs.ubd.edu.bn/wp-content/uploads/2017/02/cropped-UBD-Main-Logo.png 659w, https://ihs.ubd.edu.bn/wp-content/uploads/2017/02/cropped-UBD-Main-Logo-219x300.png 219w, https://ihs.ubd.edu.bn/wp-content/uploads/2017/02/cropped-UBD-Main-Logo-197x270.png 197w" sizes="(max-width: 659px) 100vw, 659px"></h1>       
+<body>
+ <div class="login">
+	
+     
+
+     
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<p><input type="text" name="Age" placeholder="Age" required="required" /><br></p>
+        <p><input type="text" name="Gender" placeholder="Gender" required="required" /><br></p>
+		<p><input type="text" name="SysBP" placeholder="SysBP" required="required" /><br></p>
+        <p><input type="text" name="Diabetes" placeholder="Diabetes" required="required" /><br></p>
+        <p><input type="text" name="Smoking" placeholder="Smoking" required="required" /><br></p>
+        <p><input type="text" name="Tot_Chol_mmol/l" placeholder="Tot_Chol_mmol/l" required="required" /><br></p>
+
+        <p><button type="submit" class="btn btn-primary btn-block btn-large">Predict</button><p/>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
