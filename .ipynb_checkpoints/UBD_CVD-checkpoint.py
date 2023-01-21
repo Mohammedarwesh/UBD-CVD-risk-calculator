@@ -29,7 +29,7 @@ def predict():
     probapility_round = round(probapility[0,1]*100)
 
 
-    return render_template('index.html', 
+    return render_template('predict.html', 
                            prediction_text=f'You are of {msg} and Your CVD risk is about {probapility_round}%')
 
 

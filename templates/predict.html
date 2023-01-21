@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UBD-CVD</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+</head>
+ <img align="left" width="100" height="130" src="https://ihs.ubd.edu.bn/wp-content/uploads/2017/02/cropped-UBD-Main-Logo.png" class="custom-logo" alt="UBD PAPRSB Institute of Health Sciences" srcset="https://ihs.ubd.edu.bn/wp-content/uploads/2017/02/cropped-UBD-Main-Logo.png 659w, https://ihs.ubd.edu.bn/wp-content/uploads/2017/02/cropped-UBD-Main-Logo-219x300.png 219w, https://ihs.ubd.edu.bn/wp-content/uploads/2017/02/cropped-UBD-Main-Logo-197x270.png 197w" sizes="(max-width: 659px) 100vw, 659px"> 
+      
+         <h1><font face="Cursive">UBD CVD risk calculator</font></h1> <h5> AI-based calculator based on Brunei data</h5>    
+<body>
+  
+ <div class="login">
+
+<br><br><br> <br> 
+   <p size = 20 style="color: #FF7A59;font-size:32px">{{ prediction_text }} </p>
+
+ </div>
+
+
+</body>
+</html>
