@@ -8,3 +8,5 @@ spacy==2.0.16
 numpy
 pandas
 matplotlip
+requests
+configparser
